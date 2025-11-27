@@ -802,20 +802,31 @@ section {
     font-weight: 600;
 }
 
-.social-links {
+.footer-right {
     display: flex;
-    gap: var(--spacing-lg);
+    flex-direction: column;
+    gap: var(--spacing-sm);
+    text-align: right;
+    align-items: flex-end;
 }
 
-.social-link {
+.footer-right p {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: var(--font-size-sm);
+    margin: 0;
+}
+
+.github-link {
     color: white;
     text-decoration: none;
     font-weight: 500;
     transition: var(--transition-fast);
+    font-size: var(--font-size-sm);
 }
 
-.social-link:hover {
+.github-link:hover {
     color: var(--primary-light);
+    text-decoration: underline;
 }
 
 /* Responsive Design */
@@ -888,6 +899,11 @@ section {
     .footer-content {
         flex-direction: column;
         text-align: center;
+    }
+    
+    .footer-right {
+        text-align: center;
+        align-items: center;
     }
 }
 
